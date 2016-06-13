@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="qbstyle.css">
+		<link href='https://fonts.googleapis.com/css?family=Raleway|Arvo|Inconsolata|Bree+Serif|Francois+One|Quicksand|Pathway+Gothic+One|Abril+Fatface' rel='stylesheet' type='text/css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<meta charset="UTF-8">
+		<title>QuoteTool</title>
+	</head>
+<body>
+<script type="text/javascript" src="quotescript.js"></script>
+<script type="text/javascript" src="calculate.js"></script>
+<div id="titlediv" class="shadow">
+	<h1>Quote Builder</h1>
+		<p>Click ADD PART to add the item to the quote, which is compiled to the left.  Click REMOVE PART to revome it from your quote</p>
+</div>
+  
+    <!--<div  id="nav">
+   <header>
+      <ul>
+        <li class="home"><a href="#">Go to Top</a></li>
+        <li class="tutorials"><a class="active" href="#">SaaS</a></li>
+        <li class="about"><a href="#">MicroLog</a></li>
+        <li class="news"><a href="#">PSP</a></li>
+        <li class="contact"><a href="#"></a></li>
+      </ul>
+  </header>
+    </div>-->
+
+<div id="allpartsdiv">
+	<div id="saasdiv" class="shadow">
+		<h2>SaaS</h2>
+			<ul id="saaslist">
+			<h4>SKF @ptitude Analyst</h4>
+			  <li>AMDS-HEAS-SC  <button id="add" onclick="myFunction(); calculate()">Add</button><input class="input" id="box" type="number" value="1" oninput="calculate()" /></li>
+			  
+			  <li>AMDS-HEAS-AC  <button id="add1" onclick="myAdd1(); calculate1()">Add</button><input class="input" id="box1" type="number" value="1" oninput="calculate1()" /></li>
+			  
+			  <li>AMDS-HVAS-SC  <button id="add2" onclick="myAdd2(); calculate2()">Add</button><input class="input" id="box2" type="number" value="1" oninput="calculate2()" /></li>
+			  
+			  <li>AMDS-HVAS-AC  <button id="add3" onclick="myAdd3(); calculate3()">Add</button><input class="input" id="box3" type="number" value="1" oninput="calculate3()" /></li>
+			  
+			  <h4>GC Resources (select option)</h4>
+			  
+			  <li>AMDS-RFDO-IMX  <button id="add4" onclick="myAdd4(); calculate4()">Add</button><input class="input" id="box4" type="number" value="1" oninput="calculate4()" /></li>
+			  
+			  <li>AMDS-RFDO-WMX  <button id="add5" onclick="myAdd5(); calculate5()">Add</button><input class="input" id="box5" type="number" value="1" oninput="calculate5()" /></li>
+			  
+			  <li>AMDS-RFDP-MA  <button id="add6" onclick="myAdd6(); calculate6()">Add</button><input class="input" id="box6" type="number" value="1" oninput="calculate6()" /></li>
+			  
+			  <li>AMDS-RFDP-MI  <button id="add7" onclick="myAdd7(); calculate7()">Add</button><input class="input" id="box7" type="number" value="1" oninput="calculate7()" /></li>
+			  
+			  <h4>OGC Resources Upgrades</h4>
+			  
+			  <li>AMDS-GBUP  <button id="add8" onclick="myAdd8(); calculate8()">Add</button><input class="input" id="box8" type="number" value="1" oninput="calculate8()" /></li>
+			  
+			  <h4>System and Device Configuration Services (One time fees)</h4>
+			  
+			  <li>AMDS-CFDO  <button id="add9" onclick="myAdd9(); calculate9()">Add</button><input class="input" id="box9" type="number" value="1" oninput="calculate9()" /></li>
+			  
+			  <li>AMDS-CFDP  <button id="add10" onclick="myAdd10(); calculate10()">Add</button><input class="input" id="box10" type="number" value="1" oninput="calculate10()" /></li>
+			  
+			  <li>AMDS-CFCA  <button id="add11" onclick="myAdd11(); calculate11()">Add</button><input class="input" id="box11" type="number" value="1" oninput="calculate11()" /></li>
+			  
+			  <li>AMDS-CFSM  <button id="add12" onclick="myAdd12(); calculate12()">Add</button><input class="input" id="box12" type="number" value="1" oninput="calculate12()" /></li>
+			  
+			  <li>ESS7801  <button id="add13" onclick="myAdd13(); calculate13()">Add</button><input class="input" id="box13" type="number" value="1" oninput="calculate13()" /></li>
+			  
+			  <li>ADS7802  <button id="add14" onclick="myAdd14(); calculate14()">Add</button><input class="input" id="box14" type="number" value="1" oninput="calculate14()" /></li>	  
+		</ul>
+		<hr>
+	</div>
+</div>
+
+<div id="tabletitlediv" class="shadow">
+<h2>ITEMS IN THE QUOTE</h2>
+	<div id="removebutton">
+		<button id="remove" onclick="myRemoveRow()">Remove Row</button> 
+	</div>
+
+<table id="myTable">
+	<tr>
+		<td id="qtyList" class="header"><strong>QUANTITY</strong></td>
+		<td id="pnlist" class="header"><strong>PART NUMBER</strong></td>
+		<td id="descList" class="header"><strong>SHORT DESCRIPTION LIST</strong></td>
+		<td id="priceList" class="header"><strong>PRICE LIST</strong></td>
+		<td id="totalList" class="header"><strong>TOTAL LINE PRICE</strong></td>
+	</tr>
+	<tr></tr>
+</table>
+<hr>
+<h2>LONG DESCRIPTIONS</h2>
+
+<table id="myTable2">
+	<tr>
+		<td id="quoteList" class="header"><strong>LONG DESCRIPTION</strong></td>
+	</tr>
+</table>
+</div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="qbstyle.css">
+	<link href='https://fonts.googleapis.com/css?family=Raleway|Arvo|Inconsolata|Bree+Serif|Francois+One|Quicksand|Pathway+Gothic+One|Abril+Fatface' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<meta charset="UTF-8">
+	<title>Quote Selector</title>
+</head>
+<body>
+<script type="text/javascript" src="quotescript.js"></script>
+<div id="titlediv" class="shadow">
+	<h1>Quote Builder</h1>
+		<p>Click ADD PART to add the item to the quote, which is compiled to the left.  Click REMOVE PART to revome it from your quote</p>
+</div>
+  
+    <div  id="nav" class="shadow">
+   <header>
+      <ul>
+        <li class="home"><a href="#">Home</a></li>
+        <li class="tutorials"><a class="active" href="#">Tutorials</a></li>
+        <li class="about"><a href="#">About</a></li>
+        <li class="news"><a href="#">Newsletter</a></li>
+        <li class="contact"><a href="#">Contact</a></li>
+      </ul>
+  </header>
+    </div>
+<div id="allpartsdiv">
+	<div id="saasdiv" class="shadow">
+		<h2>SaaS</h2>
+			<ul id="saaslist">
+			<h4>SKF @ptitude Analyst</h4>
+			  <li>AMDS-HEAS-SC  <button id="add" onclick="myFunction()">Add</button></li>
+			  <li>AMDS-HEAS-AC  <button id="add" onclick="myAdd1()">Add</button></li>
+			  <li>AMDS-HVAS-SC  <button id="add" onclick="myAdd2()">Add</button></li>
+			  <li>AMDS-HVAS-AC  <button id="add" onclick="myAdd3()">Add</button></li>
+			<h4>GC Resources (select option)</h4>
+			  <li>AMDS-RFDO-IMX  <button id="add" onclick="myAdd4()">Add</button></li>
+			  <li>AMDS-RFDO-WMX  <button id="add" onclick="myAdd5()">Add</button></li>
+			  <li>AMDS-RFDP-MA  <button id="add" onclick="myAdd6()">Add</button></li>
+			  <li>AMDS-RFDP-MI  <button id="add" onclick="myAdd7()">Add</button></li>
+			<h4>OGC Resources Upgrades</h4>
+			  <li>AMDS-GBUP  <button id="add" onclick="myAdd8()">Add</button></li>
+			<h4>System and Device Configuration Services (One time fees)</h4>
+			  <li>AMDS-CFDO  <button id="add" onclick="myAdd9()">Add</button></li>
+			  <li>AMDS-CFDP  <button id="add" onclick="myAdd10()">Add</button></li>
+			  <li>AMDS-CFCA  <button id="add" onclick="myAdd11()">Add</button></li>
+			  <li>AMDS-CFSM  <button id="add" onclick="myAdd12()">Add</button></li>
+			  <li>ESS7801  <button id="add" onclick="myAdd13()">Add</button></li>
+			  <li>ADS7802  <button id="add" onclick="myAdd14()">Add</button></li>	  
+		</ul>
+		<hr>
+	</div>
+</div>
+
+<div id="tabletitlediv" class="shadow">
+<h2>ITEMS IN THE QUOTE</h2>
+	<div id="removebutton">
+		<button id="remove" onclick="myRemoveRow()">Remove Row</button> 
+	</div>
+
+<table id="myTable">
+	<tr>
+		<td id="qtyList" class="header"><strong>QUANTITY</strong></td>
+		<td id="pnlist" class="header"><strong>PART NUMBER</strong></td>
+		<td id="descList" class="header"><strong>SHORT DESCRIPTION LIST</strong></td>
+		<td id="priceList" class="header"><strong>PRICE LIST</strong></td>
+		<td id="totalList" class="header"><strong>TOTAL</strong></td>
+		<td id="quoteList" class="header"><strong>LONG DESCRIPTION</strong></td>
+	</tr>
+	<tr></tr>
+</table>
+</div>
+
+
+
+
+</body>
+</html>
